@@ -57,10 +57,10 @@ export function QuoteForm() {
                             type="text"
                             placeholder="Company or Project Name"
                             autoComplete="false"
-                            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
+                            className={`w-full px-4 py-3 border-2 placeholder: rounded-md outline-none focus:ring-4  ${
                                 errors.project
-                                    ? 'border-red-600 focus:border-red-600 ring-red-100 dark:ring-0'
-                                    : 'border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0'
+                                    ? 'border-red-600 focus:border-red-600 ring-red-100'
+                                    : 'border-gray-300 focus:border-gray-600 ring-gray-100'
                             }`}
                             {...register('project', {
                                 required: 'Company or project name is required',
@@ -85,10 +85,10 @@ export function QuoteForm() {
                             type="text"
                             placeholder="Contact Name"
                             autoComplete="false"
-                            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
+                            className={`w-full px-4 py-3 border-2 placeholder: rounded-md outline-none focus:ring-4  ${
                                 errors.name
-                                    ? 'border-red-600 focus:border-red-600 ring-red-100 dark:ring-0'
-                                    : 'border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0'
+                                    ? 'border-red-600 focus:border-red-600 ring-red-100'
+                                    : 'border-gray-300 focus:border-gray-600 ring-gray-100  '
                             }`}
                             {...register('name', {
                                 required: 'Contact name is required',
@@ -113,10 +113,10 @@ export function QuoteForm() {
                             type="email"
                             placeholder="Email Address"
                             autoComplete="false"
-                            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
+                            className={`w-full px-4 py-3 border-2 placeholder: rounded-md outline-none focus:ring-4  ${
                                 errors.email
-                                    ? 'border-red-600 focus:border-red-600 ring-red-100 dark:ring-0'
-                                    : 'border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0'
+                                    ? 'border-red-600 focus:border-red-600 ring-red-100'
+                                    : 'border-gray-300 focus:border-gray-600 ring-gray-100 '
                             }`}
                             {...register('email', {
                                 required: 'Enter your email',
@@ -144,10 +144,10 @@ export function QuoteForm() {
                             type="phone"
                             placeholder="Phone Number"
                             autoComplete="false"
-                            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
+                            className={`w-full px-4 py-3 border-2 placeholder: rounded-md outline-none focus:ring-4  ${
                                 errors.email
-                                    ? 'border-red-600 focus:border-red-600 ring-red-100 dark:ring-0'
-                                    : 'border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0'
+                                    ? 'border-red-600 focus:border-red-600 ring-red-100'
+                                    : 'border-gray-300 focus:border-gray-600 ring-gray-100  '
                             }`}
                             {...register('phone', {
                                 required: 'Enter your phone number',
@@ -175,10 +175,10 @@ export function QuoteForm() {
                             type="number"
                             placeholder="Budget"
                             autoComplete="false"
-                            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
+                            className={`w-full px-4 py-3 border-2 placeholder: rounded-md outline-none focus:ring-4  ${
                                 errors.budget
-                                    ? 'border-red-600 focus:border-red-600 ring-red-100 dark:ring-0'
-                                    : 'border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0'
+                                    ? 'border-red-600 focus:border-red-600 ring-red-100'
+                                    : 'border-gray-300 focus:border-gray-600 ring-gray-100  '
                             }`}
                             {...register('budget', {
                                 required: 'Enter your budget'
@@ -197,10 +197,10 @@ export function QuoteForm() {
                         <textarea
                             id="message"
                             placeholder="Describe your project"
-                            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  ${
+                            className={`w-full px-4 py-3 border-2 placeholder: rounded-md outline-none  h-36 focus:ring-4  ${
                                 errors.message
-                                    ? 'border-red-600 focus:border-red-600 ring-red-100 dark:ring-0'
-                                    : 'border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0'
+                                    ? 'border-red-600 focus:border-red-600 ring-red-100'
+                                    : 'border-gray-300 focus:border-gray-600 ring-gray-100  '
                             }`}
                             {...register('message', {
                                 required: 'Enter your Project Description'
@@ -218,11 +218,11 @@ export function QuoteForm() {
 
                     <button
                         type="submit"
-                        className="w-full py-4 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black "
+                        className="w-full py-4 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7"
                     >
                         {isSubmitting ? (
                             <svg
-                                className="w-5 h-5 mx-auto text-white dark:text-black animate-spin"
+                                className="w-5 h-5 mx-auto text-white animate-spin"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
