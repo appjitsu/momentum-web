@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { ThemeProvider } from 'next-themes';
+import { GoogleTagManager } from '@next/third-parties/google';
 import './globals.css';
 
 import { Navbar } from '@/components/Navbar';
@@ -21,6 +21,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
+            <GoogleTagManager gtmId="AW-951138866" />
             <body className={inter.className}>
                 <Navbar />
                 <div>{children}</div>
