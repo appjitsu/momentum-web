@@ -57,43 +57,6 @@ export function Footer() {
                             ))}
                         </div>
                     </div>
-                    <div className="">
-                        <div>Follow us</div>
-                        <div className="flex mt-5 space-x-5">
-                            <a
-                                href="https://twitter.com/momentumsoftware"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                <span className="sr-only">Twitter</span>
-                                <Twitter />
-                            </a>
-                            <a
-                                href="https://facebook.com/momentumsoftware"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                <span className="sr-only">Facebook</span>
-                                <Facebook />
-                            </a>
-                            <a
-                                href="https://instagram.com/momentumsoftware"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                <span className="sr-only">Instagram</span>
-                                <Instagram />
-                            </a>
-                            <a
-                                href="https://linkedin.com/momentumsoftware"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                <span className="sr-only">Linkedin</span>
-                                <Linkedin />
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
                 <div className="my-10 text-sm text-center">
