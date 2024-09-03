@@ -64,7 +64,9 @@ export function ContactForm() {
                         />
                         {errors.name && (
                             <div className="mt-1 text-red-600">
-                                <small>{errors.name.message.toString()}</small>
+                                <small>
+                                    {errors?.name?.message?.toString()}
+                                </small>
                             </div>
                         )}
                     </div>
@@ -94,7 +96,9 @@ export function ContactForm() {
                         />
                         {errors.email && (
                             <div className="mt-1 text-red-600">
-                                <small>{errors.email.message.toString()}</small>
+                                <small>
+                                    {errors?.email?.message?.toString()}
+                                </small>
                             </div>
                         )}
                     </div>
@@ -116,7 +120,7 @@ export function ContactForm() {
                             <div className="mt-1 text-red-600">
                                 {' '}
                                 <small>
-                                    {errors.message.message.toString()}
+                                    {errors?.message?.message?.toString()}
                                 </small>
                             </div>
                         )}

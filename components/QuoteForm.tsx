@@ -71,7 +71,7 @@ export function QuoteForm() {
                         {errors.project && (
                             <div className="mt-1 text-red-600">
                                 <small>
-                                    {errors.project.message.toString()}
+                                    {errors?.project?.message?.toString()}
                                 </small>
                             </div>
                         )}
@@ -99,7 +99,9 @@ export function QuoteForm() {
                         />
                         {errors.name && (
                             <div className="mt-1 text-red-600">
-                                <small>{errors.name.message.toString()}</small>
+                                <small>
+                                    {errors?.name?.message?.toString()}
+                                </small>
                             </div>
                         )}
                     </div>
@@ -129,7 +131,9 @@ export function QuoteForm() {
                         />
                         {errors.email && (
                             <div className="mt-1 text-red-600">
-                                <small>{errors.email.message.toString()}</small>
+                                <small>
+                                    {errors?.email?.message?.toString()}
+                                </small>
                             </div>
                         )}
                     </div>
@@ -159,7 +163,9 @@ export function QuoteForm() {
                         />
                         {errors.phone && (
                             <div className="mt-1 text-red-600">
-                                <small>{errors.phone.message.toString()}</small>
+                                <small>
+                                    {errors?.phone?.message?.toString()}
+                                </small>
                             </div>
                         )}
                     </div>
@@ -186,7 +192,7 @@ export function QuoteForm() {
                         {errors.budget && (
                             <div className="mt-1 text-red-600">
                                 <small>
-                                    {errors.budget.message.toString()}
+                                    {errors?.budget?.message?.toString()}
                                 </small>
                             </div>
                         )}
@@ -209,7 +215,7 @@ export function QuoteForm() {
                             <div className="mt-1 text-red-600">
                                 {' '}
                                 <small>
-                                    {errors.message.message.toString()}
+                                    {errors?.message?.message?.toString()}
                                 </small>
                             </div>
                         )}
