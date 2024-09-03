@@ -54,7 +54,6 @@ export function QuoteForm() {
                         </label>
                         <input
                             id="project"
-                            name="project"
                             type="text"
                             placeholder="Company or Project Name"
                             autoComplete="false"
@@ -83,7 +82,6 @@ export function QuoteForm() {
                         </label>
                         <input
                             id="name"
-                            name="name"
                             type="text"
                             placeholder="Contact Name"
                             autoComplete="false"
@@ -114,7 +112,6 @@ export function QuoteForm() {
                             id="email"
                             type="email"
                             placeholder="Email Address"
-                            name="email"
                             autoComplete="false"
                             className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
                                 errors.email
@@ -146,7 +143,6 @@ export function QuoteForm() {
                             id="phone"
                             type="phone"
                             placeholder="Phone Number"
-                            name="phone"
                             autoComplete="false"
                             className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
                                 errors.email
@@ -178,7 +174,6 @@ export function QuoteForm() {
                             id="budget"
                             type="number"
                             placeholder="Budget"
-                            name="budget"
                             autoComplete="false"
                             className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
                                 errors.budget
@@ -200,7 +195,7 @@ export function QuoteForm() {
 
                     <div className="mb-3">
                         <textarea
-                            name="message"
+                            id="message"
                             placeholder="Describe your project"
                             className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  ${
                                 errors.message

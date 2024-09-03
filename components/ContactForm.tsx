@@ -79,7 +79,6 @@ export function ContactForm() {
                             id="email_address"
                             type="email"
                             placeholder="Email Address"
-                            name="email"
                             autoComplete="false"
                             className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
                                 errors.email
@@ -105,7 +104,7 @@ export function ContactForm() {
 
                     <div className="mb-3">
                         <textarea
-                            name="message"
+                            id="message"
                             placeholder="Your Message"
                             className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  ${
                                 errors.message
