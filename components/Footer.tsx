@@ -6,11 +6,11 @@ import { Container } from '@/components/Container';
 export function Footer() {
     const navigation = [
         { name: 'Home', href: '/' },
-        { name: 'Services', href: 'services' },
         { name: 'About Us', href: 'about-us' },
         { name: 'Contact Us', href: 'contact-us' }
     ];
     const legal = [
+        { name: 'Midland, Texas', href: 'midland-texas' },
         { name: 'Terms', href: 'terms-of-use' },
         { name: 'Privacy', href: 'privacy-policy' }
     ];
