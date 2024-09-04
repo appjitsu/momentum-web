@@ -80,7 +80,7 @@ function Benefit(props: any) {
                 })}
             </div>
             <div>
-                <h4 className="text-xl font-medium  ">{props.title}</h4>
+                <h4 className="text-xl font-medium">{props.title}</h4>
                 <p className="mt-1">{props.children}</p>
             </div>
         </div>

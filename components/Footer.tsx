@@ -15,15 +15,15 @@ export function Footer() {
         { name: 'Privacy', href: 'privacy-policy' }
     ];
     return (
-        <div className="relative">
+        <div className="relative bg-gray-200">
             <Container>
-                <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 lg:grid-cols-5">
+                <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto border-gray-100 lg:grid-cols-5">
                     <div className="lg:col-span-2">
                         <div>
-                            <span className="text-lg">Momentum</span>
+                            <span className="text-lg font-bold">Momentum</span>
                         </div>
 
-                        <div className="max-w-md mt-4  ">
+                        <div className="max-w-md mt-4 text-gray-700">
                             We strive to create the best solutions for your
                             business. We are a team of experienced developers
                             and designers who can help you build your dream
@@ -37,7 +37,7 @@ export function Footer() {
                                 <Link
                                     key={index}
                                     href={item.href}
-                                    className="w-full px-4 py-2  rounded-md  hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none "
+                                    className="w-full px-4 py-2 rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
                                 >
                                     {item.name}
                                 </Link>
@@ -50,18 +50,13 @@ export function Footer() {
                                 <Link
                                     key={index}
                                     href={item.href}
-                                    className="w-full px-4 py-2  rounded-md  hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none "
+                                    className="w-full px-4 py-2 rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
                                 >
                                     {item.name}
                                 </Link>
                             ))}
                         </div>
                     </div>
-                </div>
-
-                <div className="my-10 text-sm text-center">
-                    Copyright © {new Date().getFullYear()} Momentum Software.
-                    All rights reserved.
                 </div>
             </Container>
         </div>
