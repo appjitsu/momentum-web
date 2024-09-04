@@ -39,19 +39,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8
         },
         {
-            url: 'https://www.momentumsoftware.io/app-development',
+            url: 'https://www.momentumsoftware.io/web-app-development',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8
         },
         {
             url: 'https://www.momentumsoftware.io/mobile-app-development',
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.8
-        },
-        {
-            url: 'https://www.momentumsoftware.io/industries',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8
