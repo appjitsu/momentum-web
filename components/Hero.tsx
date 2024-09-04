@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Container } from '@/components/Container';
-import heroImg from '@/public/img/hero.png';
+import heroImg from '@/public/img/process.png';
 import Link from 'next/link';
 
 export const Hero = () => {
@@ -10,10 +10,9 @@ export const Hero = () => {
                 <div className="flex items-center w-full lg:w-1/2">
                     <div className="max-w-2xl mb-8">
                         <h1 className="text-4xl font-bold leading-snug tracking-tight lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight">
-                            We build custom web <br />
-                            and mobile apps
+                            We build custom web and mobile apps
                         </h1>
-                        <p className="py-5 text-xl leading-normal  lg:text-xl xl:text-2xl ">
+                        <p className="py-5 text-xl leading-normal lg:text-xl xl:text-2xl ">
                             We strive to create the best solutions for your
                             business. We are a team of experienced developers
                             and designers who can help you build your dream
@@ -36,8 +35,8 @@ export const Hero = () => {
                             src={heroImg}
                             width="616"
                             height="617"
-                            className={'object-cover'}
-                            alt="Hero Illustration"
+                            className={'object-cover rounded-lg'}
+                            alt="Custom web and mobile apps"
                             loading="eager"
                             placeholder="blur"
                         />
