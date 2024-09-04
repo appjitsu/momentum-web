@@ -8,6 +8,7 @@ import {
     DeviceTabletIcon,
     PresentationChartLineIcon
 } from '@heroicons/react/24/solid';
+import { GetInTouch } from '@/components/GetInTouch';
 
 export default function Services() {
     const services = [
@@ -76,20 +77,7 @@ export default function Services() {
                     </li>
                 ))}
             </ul>
-            <div className="mt-10">
-                <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
-                <p className="text-gray-600 mb-4">
-                    Interested in learning more about our services? Contact us
-                    today to discuss how we can help you achieve your business
-                    goals.
-                </p>
-                <Link
-                    href="/contact"
-                    className="text-lg text-blue-600 hover:underline"
-                >
-                    Contact Us
-                </Link>
-            </div>
+            <GetInTouch />
         </Container>
     );
 }

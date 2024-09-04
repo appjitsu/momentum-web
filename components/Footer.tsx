@@ -6,8 +6,91 @@ import { Container } from '@/components/Container';
 export function Footer() {
     const navigation = [
         { name: 'Home', href: '/' },
+        { name: 'Services', href: 'services' },
         { name: 'About Us', href: 'about-us' },
         { name: 'Contact Us', href: 'contact-us' }
+    ];
+    const services = [
+        {
+            name: 'Product Strategy and Consulting',
+            href: 'product-strategy-consulting'
+        },
+        { name: 'Website Design', href: 'website-design' },
+        { name: 'Website Development', href: 'website-development' },
+        {
+            name: 'UI/UX Design and Prototyping',
+            href: 'ui-ux-design-prototyping'
+        },
+        { name: 'Web App Development', href: 'web-app-development' },
+        { name: 'Mobile App Development', href: 'mobile-app-development' }
+    ];
+    const social = [
+        {
+            name: 'Twitter',
+            href: 'https://twitter.com/momentumsoftware',
+            icon: Twitter
+        },
+        {
+            name: 'Facebook',
+            href: 'https://www.facebook.com/momentumsoftware',
+            icon: Facebook
+        },
+        {
+            name: 'Instagram',
+            href: 'https://www.instagram.com/momentumsoftware',
+            icon: Instagram
+        },
+        {
+            name: 'Linkedin',
+            href: 'https://www.linkedin.com/company/momentumsoftware',
+            icon: Linkedin
+        }
+    ];
+    const industries = [
+        {
+            name: 'Healthcare',
+            href: 'healthcare'
+        },
+        {
+            name: 'Education',
+            href: 'education'
+        },
+        {
+            name: 'Finance',
+            href: 'finance'
+        },
+        {
+            name: 'Retail',
+            href: 'retail'
+        },
+        {
+            name: 'Real Estate',
+            href: 'real-estate'
+        },
+        {
+            name: 'Travel and Tourism',
+            href: 'travel-tourism'
+        },
+        {
+            name: 'Insurance',
+            href: 'insurance'
+        },
+        {
+            name: 'Logistics',
+            href: 'logistics'
+        },
+        {
+            name: 'Manufacturing',
+            href: 'manufacturing'
+        },
+        {
+            name: 'Energy',
+            href: 'energy'
+        },
+        {
+            name: 'Oil and Gas',
+            href: 'oil-gas'
+        }
     ];
     const legal = [
         { name: 'Midland, Texas', href: 'midland-texas' },
@@ -18,22 +101,32 @@ export function Footer() {
         <div className="relative bg-gray-200">
             <Container>
                 <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto border-gray-100 lg:grid-cols-5">
-                    <div className="lg:col-span-2">
+                    <div className="lg:col-span-1">
                         <div>
                             <span className="text-lg font-bold">Momentum</span>
                         </div>
-
                         <div className="max-w-md mt-4 text-gray-700">
                             We strive to create the best solutions for your
-                            business. We are a team of experienced developers
-                            and designers who can help you build your dream
-                            project.
+                            business. Our team of experts will help you achieve
+                            your business goals.
                         </div>
                     </div>
-
                     <div>
                         <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
                             {navigation.map((item, index) => (
+                                <Link
+                                    key={index}
+                                    href={item.href}
+                                    className="w-full px-4 py-2 rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
+                                >
+                                    {item.name}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+                        <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+                            {services.map((item, index) => (
                                 <Link
                                     key={index}
                                     href={item.href}
