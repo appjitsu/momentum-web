@@ -14,7 +14,7 @@ import benefitTwoImg from '@/public/img/success.jpg';
 
 const benefitOne = {
     title: 'Our Services',
-    desc: 'Your expert partners for building mission-driven products',
+    desc: '',
     image: benefitOneImg,
     bullets: [
         {
@@ -26,16 +26,6 @@ const benefitOne = {
             title: 'Website Design and Development',
             desc: 'We create custom websites that are beautiful, responsive, and easy to use, helping you connect with your audience effectively.',
             icon: <GlobeAmericasIcon />
-        },
-        {
-            title: 'UI/UX Design and Prototyping',
-            desc: 'We design user-friendly interfaces that provide a great experience, making sure your applications are both attractive and easy to navigate.',
-            icon: <CursorArrowRaysIcon />
-        },
-        {
-            title: 'Web Application Development',
-            desc: 'We build custom web applications that are secure, scalable, and perform well, tailored to meet your business needs.',
-            icon: <DeviceTabletIcon />
         },
         {
             title: 'Mobile App Development',
