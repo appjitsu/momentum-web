@@ -24,8 +24,13 @@ export const Navbar = () => {
                         <>
                             <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                                 <Link href="/">
-                                    <span className="flex items-center space-x-2 text-2xl font-medium">
-                                        <span>Momentum</span>
+                                    <span className="flex items-baseline text-2xl font-medium">
+                                        <Image
+                                            src="/img/momentum_logo.png"
+                                            alt="Momentum"
+                                            width={200}
+                                            height={40}
+                                        />
                                     </span>
                                 </Link>
 
