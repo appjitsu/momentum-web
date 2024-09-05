@@ -3,67 +3,67 @@ import type { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
         {
-            url: 'https://www.momentumsoftware.io',
+            url: 'https://www.momentumdigitaltx.com',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 1
         },
         {
-            url: 'https://www.momentumsoftware.io/services',
+            url: 'https://www.momentumdigitaltx.com/services',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8
         },
         {
-            url: 'https://www.momentumsoftware.io/product-strategy-consulting',
+            url: 'https://www.momentumdigitaltx.com/product-strategy-consulting',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8
         },
         {
-            url: 'https://www.momentumsoftware.io/website-design',
+            url: 'https://www.momentumdigitaltx.com/website-design',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8
         },
         {
-            url: 'https://www.momentumsoftware.io/website-development',
+            url: 'https://www.momentumdigitaltx.com/website-development',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8
         },
         {
-            url: 'https://www.momentumsoftware.io/ui-ux-design-prototyping',
+            url: 'https://www.momentumdigitaltx.com/ui-ux-design-prototyping',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8
         },
         {
-            url: 'https://www.momentumsoftware.io/web-app-development',
+            url: 'https://www.momentumdigitaltx.com/web-app-development',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8
         },
         {
-            url: 'https://www.momentumsoftware.io/mobile-app-development',
+            url: 'https://www.momentumdigitaltx.com/mobile-app-development',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8
         },
         {
-            url: 'https://www.momentumsoftware.io/about-us',
+            url: 'https://www.momentumdigitaltx.com/about-us',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8
         },
         {
-            url: 'https://www.momentumsoftware.io/contact-us',
+            url: 'https://www.momentumdigitaltx.com/contact-us',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.5
         },
         {
-            url: 'https://www.momentumsoftware.io/midland-texas',
+            url: 'https://www.momentumdigitaltx.com/midland-texas',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.5

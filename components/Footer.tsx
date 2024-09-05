@@ -27,22 +27,22 @@ export function Footer() {
     const social = [
         {
             name: 'Twitter',
-            href: 'https://twitter.com/momentumsoftware',
+            href: 'https://twitter.com/momentumdigitaltx',
             icon: Twitter
         },
         {
             name: 'Facebook',
-            href: 'https://www.facebook.com/momentumsoftware',
+            href: 'https://www.facebook.com/momentumdigitaltx',
             icon: Facebook
         },
         {
             name: 'Instagram',
-            href: 'https://www.instagram.com/momentumsoftware',
+            href: 'https://www.instagram.com/momentumdigitaltx',
             icon: Instagram
         },
         {
             name: 'Linkedin',
-            href: 'https://www.linkedin.com/company/momentumsoftware',
+            href: 'https://www.linkedin.com/company/momentumdigitaltx',
             icon: Linkedin
         }
     ];
