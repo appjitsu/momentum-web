@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
     title: 'Momentum Digital - Website Design, Web Development, Mobile Apps - Midland, Texas',
     description:
-        'We build web and mobile apps. Contact us for a free quote. Located in Midland, Texas'
+        'We build websites and mobile apps. Contact us for a free quote. Located in Midland, Texas'
 };
 
 export default function RootLayout({
