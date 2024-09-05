@@ -1,3 +1,6 @@
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 type PortfolioItem = {
@@ -25,7 +28,28 @@ const portfolioItems: PortfolioItem[] = [
     }
 ];
 
-const Portfolio: React.FC = () => {
+export const Portfolio = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+    const openModal = (image: string) => {
+        setSelectedImage(image);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage(null);
+        setIsModalOpen(false);
+    };
+
+    useEffect(() => {
+        if (isModalOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }, [isModalOpen]);
+
     return (
         <div className="container mx-auto p-4">
             <h1 className="text-3xl font-bold mb-8">Some of Our Work</h1>
@@ -33,7 +57,8 @@ const Portfolio: React.FC = () => {
                 {portfolioItems.map((item, index) => (
                     <div
                         key={index}
-                        className="border rounded-lg overflow-hidden shadow-lg"
+                        className="border rounded-lg overflow-hidden shadow-lg cursor-pointer"
+                        onClick={() => openModal(item.image)}
                     >
                         <Image
                             src={item.image}
@@ -51,6 +76,30 @@ const Portfolio: React.FC = () => {
                     </div>
                 ))}
             </div>
+
+            {isModalOpen && selectedImage && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+                    <div className="relative">
+                        <button
+                            className="absolute top-0 right-0 m-4 text-white text-2xl rounded bg-black bg-opacity-50 p-2"
+                            onClick={closeModal}
+                        >
+                            close &times;
+                        </button>
+                        <div className="flex items-center justify-center h-screen">
+                            <Image
+                                src={selectedImage}
+                                alt="Selected"
+                                className="max-w-full max-h-full"
+                                sizes="100vw"
+                                style={{ width: '100%', height: 'auto' }}
+                                width={0}
+                                height={0}
+                            />
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
