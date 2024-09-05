@@ -22,7 +22,7 @@ export function QuoteForm() {
     const { submit: onSubmit } = useWeb3Forms({
         access_key: FORMS_ACCESS_KEY,
         settings: {
-            from_name: 'Momentum Software',
+            from_name: 'Momentum Digital',
             subject: 'New Quote Request from your Website'
         },
         onSuccess: (msg: any, data: any) => {

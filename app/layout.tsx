@@ -9,7 +9,7 @@ import { Footer } from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Momentum Software - Website Design, Web Development, Mobile Apps - Midland, Texas',
+    title: 'Momentum Digital - Website Design, Web Development, Mobile Apps - Midland, Texas',
     description:
         'We build web and mobile apps. Contact us for a free quote. Located in Midland, Texas'
 };
