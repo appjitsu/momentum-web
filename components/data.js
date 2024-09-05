@@ -42,7 +42,7 @@ const benefitTwo = {
     bullets: [
         {
             title: 'Expert Team',
-            desc: 'Our team has 30 years of experience and expertise in the industry.',
+            desc: 'Our team has 30 years of experience and expertise across many industries.',
             icon: <AdjustmentsHorizontalIcon />
         },
         {
