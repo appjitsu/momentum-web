@@ -28,7 +28,10 @@ export function PopupWidget() {
         defaultValue: 'Someone'
     });
 
-    const onSubmit = async (data: any, e: any) => {
+    const onSubmit = async (
+        data: Record<string, unknown>,
+        e: React.FormEvent<HTMLFormElement>
+    ) => {
         console.log(data);
         await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
@@ -39,7 +42,7 @@ export function PopupWidget() {
             body: JSON.stringify(data, null, 2)
         })
             .then(async (response) => {
-                let json = await response.json();
+                const json = await response.json();
                 if (json.success) {
                     setIsSuccess(true);
                     setMessage(json.message);
@@ -160,7 +163,7 @@ export function PopupWidget() {
                                                 className="hidden"
                                                 style={{ display: 'none' }}
                                                 {...register('botcheck')}
-                                            ></input>
+                                            />
 
                                             <div className="mb-4">
                                                 <label

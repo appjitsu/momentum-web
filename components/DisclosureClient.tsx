@@ -87,7 +87,7 @@ export function DisclosureClient(props: Readonly<DisclosureClientProps>) {
                         <>
                             {navigation.map((item, index) => (
                                 <Link
-                                    key={index}
+                                    key={item.text}
                                     href={item.href}
                                     className="w-full px-4 py-2 -ml-4  rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
                                 >

@@ -15,7 +15,7 @@ export function QuoteForm() {
     });
 
     const [isSuccess, setIsSuccess] = useState(false);
-    const [message, setMessage] = useState(false);
+    const [message, setMessage] = useState('');
 
     const FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_FORMS_ACCESS_KEY as string;
 
@@ -25,12 +25,12 @@ export function QuoteForm() {
             from_name: 'Momentum Digital',
             subject: 'New Quote Request from your Website'
         },
-        onSuccess: (msg: any, data: any) => {
+        onSuccess: (msg: string, data: unknown) => {
             setIsSuccess(true);
             setMessage(msg);
             reset();
         },
-        onError: (msg: any, data: any) => {
+        onError: (msg: string, data: unknown) => {
             setIsSuccess(false);
             setMessage(msg);
         }
@@ -46,7 +46,7 @@ export function QuoteForm() {
                         className="hidden"
                         style={{ display: 'none' }}
                         {...register('botcheck')}
-                    ></input>
+                    />
 
                     <div className="mb-5">
                         <label htmlFor="email_address" className="sr-only">

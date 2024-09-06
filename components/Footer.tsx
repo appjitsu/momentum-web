@@ -115,7 +115,7 @@ export function Footer() {
                         <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
                             {navigation.map((item, index) => (
                                 <Link
-                                    key={index}
+                                    key={item.name}
                                     href={item.href}
                                     className="w-full px-4 py-2 rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
                                 >
@@ -128,7 +128,7 @@ export function Footer() {
                         <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
                             {services.map((item, index) => (
                                 <Link
-                                    key={index}
+                                    key={item.name}
                                     href={item.href}
                                     className="w-full px-4 py-2 rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
                                 >
@@ -141,7 +141,7 @@ export function Footer() {
                         <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
                             {legal.map((item, index) => (
                                 <Link
-                                    key={index}
+                                    key={item.name}
                                     href={item.href}
                                     className="w-full px-4 py-2 rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
                                 >

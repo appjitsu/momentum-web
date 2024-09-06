@@ -8,7 +8,7 @@ interface BenefitsProps {
         imgPos?: 'left' | 'right';
         title: string;
         desc: string;
-        image: any;
+        image: string;
         bullets: {
             title: string;
             desc: string;
@@ -33,7 +33,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
                         alt="Benefits"
                         className={'object-cover hidden lg:block'}
                         placeholder="blur"
-                        blurDataURL={data.image.src}
+                        blurDataURL={data.image}
                     />
                 </div>
             </div>
@@ -57,7 +57,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
                     <div className="w-full mt-5">
                         {data.bullets.map((item, index) => (
                             <Benefit
-                                key={index}
+                                key={item.title}
                                 title={item.title}
                                 icon={item.icon}
                             >
@@ -71,13 +71,24 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
     );
 };
 
-function Benefit(props: any) {
+interface BenefitProps {
+    title: string;
+    icon: React.ReactNode;
+    children: React.ReactNode;
+}
+
+function Benefit(props: BenefitProps) {
     return (
         <div className="flex items-start mt-8 space-x-3">
             <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md w-11 h-11">
-                {React.cloneElement(props.icon, {
-                    className: 'w-7 h-7 text-indigo-50'
-                })}
+                {React.cloneElement(
+                    props.icon as React.ReactElement<
+                        React.SVGProps<SVGSVGElement>
+                    >,
+                    {
+                        className: 'w-7 h-7 text-indigo-50'
+                    }
+                )}
             </div>
             <div>
                 <h4 className="text-xl font-medium">{props.title}</h4>

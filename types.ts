@@ -1,6 +1,6 @@
 export interface PageProps {
-  params: {
-    slug: string;
-  };
-  searchParams: {};
+    params: {
+        slug: string;
+    };
+    searchParams: {};
 }

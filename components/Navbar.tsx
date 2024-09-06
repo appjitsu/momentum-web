@@ -63,7 +63,7 @@ export const Navbar = () => {
                                     <>
                                         {navigation.map((item, index) => (
                                             <Link
-                                                key={index}
+                                                key={item.name}
                                                 href={item.href}
                                                 className="w-full px-4 py-2 -ml-4  rounded-md  hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
                                             >
@@ -81,7 +81,7 @@ export const Navbar = () => {
                 <div className="hidden text-center lg:flex lg:items-center">
                     <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
                         {navigation.map((item, index) => (
-                            <li className="mr-3 nav__item" key={index}>
+                            <li className="mr-3 nav__item" key={item.name}>
                                 <Link
                                     href={item.href}
                                     className="inline-block px-4 py-2 text-lg font-normal  no-underline rounded-md  hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"

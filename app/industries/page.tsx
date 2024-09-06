@@ -100,19 +100,17 @@ export default function Industries() {
         <Container>
             <h1 className="text-3xl font-bold mb-10">Industries We Serve</h1>
             <ul className="space-y-4">
-                {industries.map((industry, index) => (
-                    <li key={index} className="flex items-start space-x-4">
-                        <industry.icon className="h-6 w-6 text-blue-600" />
+                {industries.map((item, index) => (
+                    <li key={item.name} className="flex items-start space-x-4">
+                        <item.icon className="h-6 w-6 text-blue-600" />
                         <div>
                             <Link
-                                href={industry.link}
+                                href={item.link}
                                 className="text-lg text-blue-600 hover:underline"
                             >
-                                {industry.name}
+                                {item.name}
                             </Link>
-                            <p className="text-gray-600">
-                                {industry.description}
-                            </p>
+                            <p className="text-gray-600">{item.description}</p>
                         </div>
                     </li>
                 ))}

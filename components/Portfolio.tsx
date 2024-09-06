@@ -56,7 +56,7 @@ export const Portfolio = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {portfolioItems.map((item, index) => (
                     <div
-                        key={index}
+                        key={item.title}
                         className="border rounded-lg overflow-hidden shadow-lg cursor-pointer"
                         onClick={() => openModal(item.image)}
                     >
@@ -83,6 +83,7 @@ export const Portfolio = () => {
                         <button
                             className="absolute top-0 right-0 m-4 text-white text-2xl rounded bg-black bg-opacity-50 p-2"
                             onClick={closeModal}
+                            type="button"
                         >
                             close &times;
                         </button>

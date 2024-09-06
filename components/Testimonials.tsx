@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React from 'react';
 import { Container } from '@/components/Container';
 
 import userOneImg from '@/public/img/user1.jpg';
@@ -61,7 +60,7 @@ export const Testimonials = () => {
 };
 
 interface AvatarProps {
-    image: any;
+    image: string;
     name: string;
     title: string;
 }

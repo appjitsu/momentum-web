@@ -14,7 +14,7 @@ export function ContactForm() {
     });
 
     const [isSuccess, setIsSuccess] = useState(false);
-    const [message, setMessage] = useState(false);
+    const [message, setMessage] = useState('');
 
     const FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_FORMS_ACCESS_KEY as string;
 
@@ -24,12 +24,12 @@ export function ContactForm() {
             from_name: 'Momentum Digital',
             subject: 'New Contact Message from your Website'
         },
-        onSuccess: (msg: any, data: any) => {
+        onSuccess: (msg: string, data: unknown) => {
             setIsSuccess(true);
             setMessage(msg);
             reset();
         },
-        onError: (msg: any, data: any) => {
+        onError: (msg: string, data: unknown) => {
             setIsSuccess(false);
             setMessage(msg);
         }
@@ -41,11 +41,13 @@ export function ContactForm() {
                 <form onSubmit={handleSubmit(onSubmit)} className="my-2">
                     <input
                         type="checkbox"
-                        id=""
+                        id="botcheck"
                         className="hidden"
                         style={{ display: 'none' }}
                         {...register('botcheck')}
-                    ></input>
+                        alt="Bot Check Input"
+                        aria-label="Bot Check Input"
+                    />
 
                     <div className="mb-5">
                         <input

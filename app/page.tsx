@@ -10,8 +10,11 @@ export default function Home() {
         <Container>
             <Hero />
             <Portfolio />
-            <Benefits data={benefitOne} />
-            <Benefits imgPos="right" data={benefitTwo} />
+            <Benefits data={{ ...benefitOne, image: benefitOne.image.src }} />
+            <Benefits
+                imgPos="right"
+                data={{ ...benefitTwo, image: benefitTwo.image.src.toString() }}
+            />
             <Cta />
         </Container>
     );

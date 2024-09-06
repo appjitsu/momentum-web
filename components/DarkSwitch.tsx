@@ -15,10 +15,11 @@ const ThemeChanger = () => {
         <div className="flex items-center">
             {theme === 'dark' ? (
                 <button
+                    type="button"
                     onClick={() => setTheme('light')}
                     className="rounded-full outline-none focus:outline-none"
                 >
-                    <span className="sr-only">Light Mode</span>
+                    <span className="sr-only">Switch to Light Mode</span>
 
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -33,6 +34,7 @@ const ThemeChanger = () => {
                 <button
                     onClick={() => setTheme('dark')}
                     className=" rounded-full outline-none focus:outline-none focus-visible:ring focus-visible:ring-gray-100 focus:ring-opacity-20"
+                    type="button"
                 >
                     <span className="sr-only">Dark Mode</span>
                     <svg
